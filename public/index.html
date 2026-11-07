@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14161a">
+  <title>CoinTrack</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23c9a227'/><circle cx='16' cy='16' r='10' fill='none' stroke='%23fff6d5' stroke-width='2'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/chart.umd.js" defer></script>
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="brand-mark" aria-hidden="true"></span>CoinTrack</a>
+    <nav>
+      <a href="#/" data-nav="dashboard">Dashboard</a>
+      <a href="#/collection" data-nav="collection">Collection</a>
+      <a href="#/spot" data-nav="spot">Spot prices</a>
+    </nav>
+    <a href="#/add" class="btn btn-primary">+ Add item</a>
+  </header>
+  <main id="view" aria-live="polite"></main>
+  <div id="toast" role="status" hidden></div>
+</body>
+</html>

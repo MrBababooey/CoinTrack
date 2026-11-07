@@ -1,0 +1,19 @@
+{
+  "name": "cointrack",
+  "version": "0.1.0",
+  "description": "Self-hosted tracker for a coin and bullion collection: cost basis, live melt values and collectible sale values over time.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env --watch server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "chart.js": "^4.4.9",
+    "express": "^5.1.0"
+  }
+}
